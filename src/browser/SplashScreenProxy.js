@@ -119,7 +119,8 @@ function readPreferencesFromCfg (cfg) {
             showSplashScreen = value === 'true';
         }
 
-        splashScreenDelay = cfg.getPreferenceValue('SplashScreenDelay') || splashScreenDelay;
+        console.log(cfg);
+        splashScreenDelay = splashScreenDelay;
         splashScreenDelay = parseInt(splashScreenDelay, 10);
 
         imageSrc = cfg.getPreferenceValue('SplashScreen') || imageSrc;
